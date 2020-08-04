@@ -1,4 +1,4 @@
-package com.example.kafka;
+package com.example.kafka.util;
 
 public class ThreadUtil {
     public static void sleep(int milli){
