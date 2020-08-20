@@ -1,9 +1,7 @@
 package com.example.kafka.config;
 
 import com.example.kafka.DummyModel;
-import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
-import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.core.DefaultKafkaProducerFactory;
@@ -37,4 +35,5 @@ public class KafkaProducerConfig {
         KafkaTemplate<String, DummyModel> template = new KafkaTemplate<>(producerFactory());
         return template;
     }
+
 }
